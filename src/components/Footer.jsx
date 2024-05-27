@@ -4,7 +4,7 @@ import {
   FaTwitterSquare,
 } from 'react-icons/fa';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-500'>
       <div>
@@ -31,9 +31,7 @@ const Footer = () => {
         <ul>
             <li className='py-2 text-sm'>Get Started</li>
             <li className='py-2 text-sm'>Overview</li>
-             <li className='py-2 text-sm'>Guides</li> 
-             {/*
-            <li className='py-2 text-sm'>API Status</li> */}
+            <li className='py-2 text-sm'>Guides</li> 
         </ul>
     </div>
     <div>
@@ -57,6 +55,5 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Footer;
