@@ -2,32 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* background-color: #000300; */
-  /* font-family: 'Inter'; */
-}
-/* .header::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  background-image: url('./assets/wave-bottom.svg');
-  width: 100%;
-  height: 230px;
-} */
-.header {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-}
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #FFFF80;
-  border-radius: 0 0 50% 50%/0 0 100% 100%;
-  transform: scaleX(1.5);
-  
-}

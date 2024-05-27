@@ -10,8 +10,6 @@ export default function Hero() {
           <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>
             Make your dreams brighter.
           </p>
-           
-
         </div>
         <p className='md:text-2xl text-xl font-bold text-gray-400'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.</p>
         <button className='bg-white w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
