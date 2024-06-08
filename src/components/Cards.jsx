@@ -1,45 +1,34 @@
 export default function Cards() {
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
-        <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-          <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full mb-3" />
-          <div className="p-4 pt-2">
-            <div className="mb-8">
-              <p className="text-sm text-gray-600 flex items-center">
-                Uploaded on April 05, 2024
-              </p>
-              <a href="#" className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block">Lorem ipsum dolor sit amet consectetur?</a>
-              <p className="text-gray-700 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-10 justify-items-around border-b border-gray-400 pb-12">
+        <div class="flex flex-col space-y-5">
+          <img className='object-cover w-96 h-60 rounded-3xl' src="https://images.unsplash.com/photo-1503495731986-41d521ecbb32?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          <img className='object-cover w-96 h-60  rounded-3xl' src="https://plus.unsplash.com/premium_photo-1680085770892-1a38291b22bf?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
         </div>
-        <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-          <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full mb-3" />
-          <div className="p-4 pt-2">
-            <div className="mb-8">
-              <p className="text-sm text-gray-600 flex items-center">
-              Uploaded on April 17, 2024
+        <div>
+        <div className='flex flex-col items-start justify-between'>
+          <ul className='list-disc text-xs flex-1 space-y-6'>
+            <li className='text-md text-[#117866]'>SOLAR POWER ENERGY</li>
+            <h1 className='text-5xl'>100% Renewable Energy</h1>
+            <p className='leading-relaxed'>The design and installation of PV systems on a large scale enable us to move away from other polluting and unsustainable energy sources.   
+              Since the solar industry is growing, that means that the need for skilled workers is also growing! Remote Energy (RE) is a 501 (c)(3) 
+              for-impact organization that trains women and men worldwide to harness the power of the sun and develop the technical PV design and installation 
+              skills required to bring clean power and positive change to their communities. 
             </p>
-            <a href="#" className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block">Lorem ipsum dolor sit amet consectetur?</a>
-            <p className="text-gray-700 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-          </div>
+            <button className='bg-[#117866] text-white w-full p-4 rounded-lg'>Subsribe to our newsletter to get latest updates</button>
+            <p className='font-semibold text-justify'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+              molestiae delectus culpa hic assumenda, voluptate reprehenderit
+              dolore autem cum ullam sed odit perspiciatis. Sit amet consectetur adipisicing elit. Voluptatum
+              molestiae delectus culpa hic assumenda, voluptate reprehenderit
+              dolore autem cum ullam sed odit perspiciatis.
+            </p>
+          </ul>
+        </div>
+        </div>
         </div>
       </div>
-     <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-      <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full mb-3" />
-      <div className="p-4 pt-2">
-            <div className="mb-8">
-          <p className="text-sm text-gray-600 flex items-center">
-            Uploaded on March 02, 2024
-          </p>
-          <a href="#" className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block">Lorem ipsum dolor sit amet consectetur?</a>
-          <p className="text-gray-700 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
 
   );
 }
