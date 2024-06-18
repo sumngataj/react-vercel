@@ -1,55 +1,78 @@
 import HeroIcon from "../assets/bghero.jpg"
-import { FaArrowRight } from "react-icons/fa6";
-export default function Hero() {
-    const data = [
-    { label: '2018', value: 500 },
-    { label: '2019', value: 450 },
-    { label: '2020', value: 380 },
-    { label: '2021', value: 300 },
-    { label: '2022', value: 270 },
-    { label: '2023', value: 0 },
-  ];
+import { useState, useEffect } from 'react';
+import Typewriter from 'typewriter-effect';
 
-  // Find the maximum value for scaling
-  const maxValue = Math.max(...data.map((item) => item.value));
-    return (
-    <div className='w-full'>
-      <div className='flex items-center justify-around max-w-[1200px] h-screen mx-auto'>
-        <div>
-        <p className='text-sm bg-[#ebf3f2] text-[#117866] rounded-full w-auto p-2 border-2'>~ Lorem ipsum dolor sit amet consectetur elit</p>
-        <h1 className='md:text-5xl sm:text-6xl text-3xl'>
-          <p>Solar energy.</p>
-          <p>the smartest way</p>
-        </h1>
-        
-        <div className="flex items-center justify-center space-x-4 mt-20">
-          <div className="flex flex-col">
-            <ul class="space-y-6 font-semibold">
-              <li>100%</li>
-              <li>75%</li>
-              <li>50%</li>
-              <li>25%</li>
-              <li>0%</li>
-            </ul>
-          </div>
-           {data.map((item, index) => (
-        <div key={index} className="">
-          <div className="bg-[#117866] h-40 border border-gray-300 rounded-lg" style={{ width: '50px', height: '14rem' }}>
-            <div
-              className="h-full bg-[#ecedef]"
-              style={{ height: `${(item.value / maxValue) * 100}%` }}
-            ></div>
-          </div>
-           <div className="text-center mt-2 italic">{item.label}</div>
-        </div>
-      ))}
+export default function Hero() {
+  let slides = [
+    "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1503350860469-854c1c495118?q=80&w=1958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://power-save.com/wp-content/uploads/2020/11/Hydropower-as-Renewable-Energy-Source-2048x1365.jpg",
+    "https://images.unsplash.com/photo-1580064461598-505b080a8242?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  ]
+  let [current, setCurrent] = useState(0);
+
+  let previousSlide = () => {
+    if (current === 0) setCurrent(slides.length - 1);
+    else setCurrent(current - 1);
+  };
+
+  let nextSlide = () => {
+    if (current === slides.length - 1) setCurrent(0);
+    else setCurrent(current + 1);
+  };
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 6000);
+    return () => clearInterval(interval); // Cleanup function to clear interval on component unmount
+  }, [current]);
+
+  return (
+    <div className="overflow-hidden relative lg:h-screen">
+      <div
+        className={`flex transition ease-in-out duration-40 bg-pink-500 blur-sm opacity-85`}
+        style={{
+          transform: `translateX(-${current * 100}%)`,
+        }}
+      >
+        {slides.map((s) => {
+          return <img src={s} />;
+        })}
       </div>
-        </div>
-        <div className=''>
-            <div className="flex items-center justify-center bg-cover bg-center bg-fixed rounded-xl h-[90vh] md:w-96" style={{ backgroundImage: `url(${HeroIcon})` }}>
-              <button className='flex items-center justify-center rounded-xl w-auto bg-[#ff7a00] mx-auto p-4 text-white text-sm'>Explore More <FaArrowRight size={16}/></button>
-            </div>
-        </div>
+
+      {/* <div className="absolute top-0 h-full w-full justify-between items-center flex text-green-500 px-10 text-3xl">
+        <button onClick={previousSlide}>
+          <BsFillArrowLeftCircleFill />
+        </button>
+        <button onClick={nextSlide}>
+          <BsFillArrowRightCircleFill />
+        </button>
+      </div> */}
+      <div className="flex justify-center text-center w-full absolute top-[30%] text-5xl text-white">
+       <Typewriter
+          options={{
+          strings: ['<span style="color: #fff; font-weight: bold; font-size: 50px; text-align: center">Unveiling the Future with 888 Renewable <br/> and <br/> Sustainable Energy Corporation 🌟</span>'],
+          autoStart: true,
+          loop: true,
+          cursorColor: '#fff',
+          cursorFontSize: '50px',
+          }}
+          
+        />
+      </div>
+
+      <div className="hidden md:flex absolute bottom-0 py-4 justify-center gap-3 w-full">
+        {slides.map((s, i) => {
+          return (
+            <div
+              onClick={() => {
+                setCurrent(i);
+              }}
+              key={"circle" + i}
+              className={`rounded-full w-3 h-3 cursor-pointer  ${
+                i == current ? "bg-white" : "bg-gray-400"
+              }`}
+            ></div>
+          );
+        })}
       </div>
     </div>
   );

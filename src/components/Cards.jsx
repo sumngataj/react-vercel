@@ -1,34 +1,72 @@
+import RsecVid from '../assets/888rsec.mp4';
+import RsecLogo from '../assets/888logo.png';
+import {useState} from 'react';
 export default function Cards() {
+  const [more, setMore] = useState(false)
+      
+  const handleReadMore = () => {
+      setMore(!more)
+    }
   return (
-    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-10 justify-items-around border-b border-gray-400 pb-12">
-        <div class="flex flex-col space-y-5">
-          <img className='object-cover w-96 h-60 rounded-3xl' src="https://images.unsplash.com/photo-1503495731986-41d521ecbb32?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <img className='object-cover w-96 h-60  rounded-3xl' src="https://plus.unsplash.com/premium_photo-1680085770892-1a38291b22bf?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-        </div>
+    <div className='h-auto p-20 bg-cover bg-fixed'  style={{ backgroundImage: `url(${'https://images.unsplash.com/photo-1588575553315-6feef5326ec0?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'})` }}>
+    <div className='w-full bg-[#7dae07] rounded-3xl py-16 px-4 h-auto'>
+      <div className='max-w-[1200px] mx-auto'>
         <div>
-        <div className='flex flex-col items-start justify-between'>
-          <ul className='list-disc text-xs flex-1 space-y-6'>
-            <li className='text-md text-[#117866]'>SOLAR POWER ENERGY</li>
-            <h1 className='text-5xl'>100% Renewable Energy</h1>
-            <p className='leading-relaxed'>The design and installation of PV systems on a large scale enable us to move away from other polluting and unsustainable energy sources.   
-              Since the solar industry is growing, that means that the need for skilled workers is also growing! Remote Energy (RE) is a 501 (c)(3) 
-              for-impact organization that trains women and men worldwide to harness the power of the sun and develop the technical PV design and installation 
-              skills required to bring clean power and positive change to their communities. 
+          <h1 className="md:text-5xl text-white font-semibold">WHY <span className='text-[#fdd703] font-semibold'>888</span>RSEC ?</h1>
+          <br />
+          <p className='text-white leading-relaxed text-justify text-xl'>Our portfolio boasts a diverse range of projects, from solar farms that capture the sun’s rays to transform them into clean electricity, to wind turbines that harness the power of the wind, and hydroelectric plants that utilize water’s might. Each project is a testament to our unwavering commitment to innovation, excellence, and sustainability. <button onClick={handleReadMore} className={`text-sm underline text-[#5fceeb] ${more ? 'hidden' : 'visible'}`}>Read More</button></p>
+         
+          <br />
+          <p className={`text-white leading-relaxed text-justify text-xl transition-shadow ease-in-out ${more ? 'visible' : 'hidden'}`}>But our ambitions go beyond energy production. At 888 Renewable and Sustainable Energy Corporation, we are dedicated to creating a world where sustainable energy is not a luxury but a given. Through our community outreach programs, we strive to educate and empower individuals and communities to make sustainable choices and advocate for policies that promote renewable energy use.
+            <br /><br />
+            As we look to the future, we are filled with hope and excitement for what lies ahead. The challenges of climate change and environmental degradation are daunting, but they are not insurmountable. With your continued support and partnership, we believe that 888 Renewable and Sustainable Energy Corporation can lead the way in creating a sustainable future for all. <button onClick={handleReadMore} className='text-sm underline text-[#5fceeb]'>View Less</button>
+          </p>
+        </div>
+         {/* <div className="flex justify-end items-end"> 
+           <img src={RsecLogo} width={300} />
+          </div> */}
+        </div>
+        <div className='flex flex-col max-w-[1240px] mx-auto mt-12 bg-white rounded-3xl px-12 py-8'>
+        <div className='flex items-start justify-between border-b border-[#102437] pb-8'>
+          <div>
+          <h1 className='text-3xl flex-1'>Company Mission</h1>
+          <ul className='list-disc text-xs flex-1 space-y-3'>
+            <p className='text-md text-[#7dae07]'>Our Mission</p>
+            <p className='text-xl text-justify leading-relaxed'><span className='font-bold'>At 888</span> Renewable and Sustainable Energy Corporation, we are not just a company; we are a beacon of hope and innovation in the quest for a greener, more sustainable future. Our mission is to harness the power of renewable resources to create energy solutions that are not only efficient and reliable but also environmentally friendly and sustainable for generations to come.
             </p>
-            <button className='bg-[#117866] text-white w-full p-4 rounded-lg'>Subsribe to our newsletter to get latest updates</button>
-            <p className='font-semibold text-justify'>
+          </ul>
+          </div>
+          <img src={RsecLogo} width={300} />
+        </div>
+        {/* <div className='flex items-center justify-between mt-8'>
+          <div>
+            <p className='text-[#102437] text-xl'>LOREM IPSUM TITLE</p>
+            <p className='text-[#102437] text-sm mt-6'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-              molestiae delectus culpa hic assumenda, voluptate reprehenderit
-              dolore autem cum ullam sed odit perspiciatis. Sit amet consectetur adipisicing elit. Voluptatum
               molestiae delectus culpa hic assumenda, voluptate reprehenderit
               dolore autem cum ullam sed odit perspiciatis.
             </p>
-          </ul>
+          </div>
+           <div className=''>
+            <p className='text-[#102437] text-xl'>LOREM IPSUM TITLE</p>
+            <p className='text-[#102437] text-sm mt-6'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+              molestiae delectus culpa hic assumenda, voluptate reprehenderit
+              dolore autem cum ullam sed odit perspiciatis.
+            </p>
+          </div>
+           <div>
+            <p className='text-[#102437] text-xl'>LOREM IPSUM TITLE</p>
+            <p className='text-[#102437] text-sm mt-6'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+              molestiae delectus culpa hic assumenda, voluptate reprehenderit
+              dolore autem cum ullam sed odit perspiciatis.
+            </p>
+ 
+          </div>
+        </div> */}
         </div>
         </div>
         </div>
-      </div>
-
   );
 }
