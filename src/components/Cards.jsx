@@ -40,7 +40,7 @@ export default function Cards() {
             </p>
           </ul>
           </div>
-          <img src={RsecLogo} width={230}  />
+          <img src={RsecLogo} width={200}  />
         </div>
         <h1 className='text-3xl mt-8'>People behind it</h1>
          <div className='grid md:grid-cols-4 p-4 mt-8 border-b border-[#102437] pb-8'>
