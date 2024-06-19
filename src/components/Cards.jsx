@@ -34,9 +34,9 @@ export default function Cards() {
              <h1 className='text-3xl text-center font-semibold'>Company Mission</h1>
         <div className='flex items-start justify-between border-b border-[#102437] pb-8 relative'>
           <div>
-          <ul className='list-disc text-xs flex-1 space-y-3'>
-            <p className='text-lg text-[#7dae07]'>Our Mission</p>
-            <p className='text-xl text-justify leading-relaxed'>At<span className='font-bold'> 888 Renewable and Sustainable Energy Corporation</span>, we are not just a company; we are a beacon of hope and innovation in the quest for a greener, more sustainable future. Our mission is to harness the power of renewable resources to create energy solutions that are not only efficient and reliable but also environmentally friendly and sustainable for generations to come.
+          <ul className='list-disc text-xs flex-1 space-y-3 mt-6'>
+            <p className='text-lg text-[#7dae07] font-medium'>Our Mission</p>
+            <p className='text-xl text-justify leading-relaxed mt-8'>At<span className='font-bold'> 888 Renewable and Sustainable Energy Corporation</span>, we are not just a company; we are a beacon of hope and innovation in the quest for a greener, more sustainable future. Our mission is to harness the power of renewable resources to create energy solutions that are not only efficient and reliable but also environmentally friendly and sustainable for generations to come.
             </p>
           </ul>
           </div>
