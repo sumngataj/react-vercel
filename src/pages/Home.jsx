@@ -1,4 +1,4 @@
-import {Navbar, Hero, Analytics, Cards, Newsletter, Featured, Footer} from '../components/index'
+import {Navbar, Hero, Analytics, Cards, Newsletter, Featured, Footer, Team} from '../components/index'
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import {useState, useEffect} from "react";
 
@@ -35,6 +35,7 @@ export default function Home() {
             <Hero />
             <Analytics />
             <Cards />
+            {/* <Team /> */}
             {/* <Newsletter /> */}
             <Featured />
             <Footer />

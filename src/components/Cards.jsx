@@ -1,6 +1,10 @@
 import RsecVid from '../assets/888rsec.mp4';
-import RsecLogo from '../assets/888logo.png';
+import RsecLogo from '../assets/logo1.png';
 import {useState} from 'react';
+import first from '../assets/1.jpg';
+import second from '../assets/2.jpg';
+import third from '../assets/3.jpg';
+import fourth from '../assets/4.jpg';
 export default function Cards() {
   const [more, setMore] = useState(false)
       
@@ -27,7 +31,7 @@ export default function Cards() {
           </div> */}
         </div>
         <div className='flex flex-col max-w-[1240px] mx-auto mt-12 bg-white rounded-3xl px-12 py-8'>
-        <div className='flex items-start justify-between border-b border-[#102437] pb-8'>
+        <div className='flex items-start justify-between border-b border-[#102437] pb-8 relative'>
           <div>
           <h1 className='text-3xl flex-1'>Company Mission</h1>
           <ul className='list-disc text-xs flex-1 space-y-3'>
@@ -36,8 +40,29 @@ export default function Cards() {
             </p>
           </ul>
           </div>
-          <img src={RsecLogo} width={300} />
+          <img src={RsecLogo} width={230}  />
         </div>
+        <h1 className='text-3xl mt-8'>People behind it</h1>
+         <div className='grid md:grid-cols-4 p-4 mt-8 border-b border-[#102437] pb-8'>
+            <div className='relative flex flex-col items-center space-y-6'>
+                <img src={first} width={150} height={150} className='rounded-full object-cover' />
+                <p className='text-center font-semibold'>CFO <br /> Edwin Robin</p>
+            </div>
+            <div className='relative flex flex-col items-center space-y-6'>
+                <img src={second} width={150} height={150} className='rounded-full object-cover' />
+                  <p className='text-center font-semibold'>Board of Directors
+CEO <br />Willy Bonilla</p>
+            </div>
+            <div className='relative flex flex-col items-center space-y-6'>
+                <img src={third} width={150} height={150} className='rounded-full object-cover' />
+                  <p className='text-center font-semibold'>COO <br />Edwin Chavez</p>
+            </div>
+            <div className='relative flex flex-col items-center space-y-6'>
+                <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
+                  <p className='text-center font-semibold'>CMO <br /> Alex Lopez</p>
+            </div>
+
+            </div>
         {/* <div className='flex items-center justify-between mt-8'>
           <div>
             <p className='text-[#102437] text-xl'>LOREM IPSUM TITLE</p>
