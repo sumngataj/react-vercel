@@ -35,14 +35,14 @@ export default function Cards() {
         <div className='flex items-start justify-between border-b border-[#102437] pb-8 relative'>
           <div>
           <ul className='list-disc text-xs flex-1 space-y-3'>
-            <p className='text-md text-[#7dae07]'>Our Mission</p>
-            <p className='text-xl text-justify leading-relaxed'><span className='font-bold'>At 888</span> Renewable and Sustainable Energy Corporation, we are not just a company; we are a beacon of hope and innovation in the quest for a greener, more sustainable future. Our mission is to harness the power of renewable resources to create energy solutions that are not only efficient and reliable but also environmentally friendly and sustainable for generations to come.
+            <p className='text-lg text-[#7dae07]'>Our Mission</p>
+            <p className='text-xl text-justify leading-relaxed'>At<span className='font-bold'> 888 Renewable and Sustainable Energy Corporation</span>, we are not just a company; we are a beacon of hope and innovation in the quest for a greener, more sustainable future. Our mission is to harness the power of renewable resources to create energy solutions that are not only efficient and reliable but also environmentally friendly and sustainable for generations to come.
             </p>
           </ul>
           </div>
           <img src={RsecLogo} width={200}  />
         </div>
-        <h1 className='text-3xl mt-8 text-center font-semibold'>People behind it</h1>
+        <h1 className='text-3xl mt-8 text-center font-semibold'>People behind 888RSEC</h1>
          <div className='flex flex-wrap md:grid-cols-4 p-4 mt-8 border-b border-[#102437] pb-8 justify-center'>
             <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={second} width={150} height={150} className='rounded-full object-cover' />
