@@ -12,13 +12,16 @@ export default function Analytics() {
       <div className='flex max-w-[1240px] justify-center items-center mx-auto relative p-4'>
             <div className='w-1/2'>
             </div>
-            <div className=' w-1/2 p-6 border-2 border-black rounded-lg relative'>
-            <img className='absolute top-[-15%] right-0'src={RsecLogo2} width={100}/>
-              <h1 className="font-semibold lg:text-4xl">About <span className='text-[#fdd703] font-semibold uppercase'>Us</span></h1>
+            <div className='w-1/2 p-6 border-2 border-black rounded-lg relative shadow-md'>
+            <img className='absolute top-[-10%] right-0'src={RsecLogo2} width={100}/>
+              <h1 className="font-semibold lg:text-3xl text-white rounded-md text-center p-2 bg-[#7dae07] shadow-lg">About <span className=''>Us</span></h1>
               <p className="text-md lg:text-xl leading-loose text-justify mt-8">
                 As we stand at the cusp of a new era in energy production and sustainability, 
                 it is with immense pride and boundless optimism that I introduce to you the pioneering vision 
-                and groundbreaking achievements of 888 Renewable and Sustainable Energy Corporation.  <button className=' text-[#5fceeb] text-sm underline'>View More</button>
+                and groundbreaking achievements of 888 Renewable and Sustainable Energy Corporation. <br /><br />
+                Our journey began with a simple yet profound belief: that the path to a sustainable future lies in leveraging the inexhaustible energy sources nature provides – the sun, wind, water, and earth. From this belief, we have grown into a leading force in the renewable energy sector, committed to developing and implementing cutting-edge technologies that reduce carbon footprints and combat climate change
+                
+                  {/* <button className=' text-[#5fceeb] text-sm underline'>View More</button> */}
               </p>
               <video className='mt-6 border-4 rounded-lg border-black' width="650" height="420" controls>
                 <source className='rounded-lg' src={RsecVid} type="video/mp4" />
