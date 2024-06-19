@@ -1,8 +1,8 @@
 export default function Featured() {
     return(
         <div className='mx-auto'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7850.274490310563!2d123.90211613935396!3d10.330899864112972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999218ad96ccd%3A0x73cd2c6cb520d2c!2sCebu%20IT%20Park%2C%20Cebu%20City%2C%206000%20Cebu!5e0!3m2!1sen!2sph!4v1718726757927!5m2!1sen!2sph" className='w-full' height="450" allowFullScreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
-        <div className='max-w-[1300px] mx-auto flex flex-col items-start justify-between mt-8'>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2398.891187512688!2d123.92753924311647!3d10.313408383338704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9990adb9282ed%3A0xe45490cfbc5faa37!2sRobinland%20Inc.!5e0!3m2!1sen!2sph!4v1718761232932!5m2!1sen!2sph" className='w-full' height="450" allowFullScreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
+        <div className='max-w-[1340px] mx-auto flex flex-col items-start justify-between mt-8'>
         <div className='grid md:grid-cols-2'>
         <h1 className='text-5xl leading-relaxed'>Contact Us</h1>
         <h1 className='text-5xl leading-relaxed'>Information</h1>
