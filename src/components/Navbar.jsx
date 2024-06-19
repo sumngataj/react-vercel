@@ -51,7 +51,7 @@ export default function Navbar() {
                 <Link to="/products" className="text-md font-semibold p-4">Products</Link>
                 <Link to="/contact" className="text-md font-semibold p-4">Contact Us</Link>
             </ul>
-            <button className="text-md font-semibold rounded-full bg-[#7dae07] p-3 text-white hidden md:flex items-center">(+63)32 238-4288</button>
+            <button className={`text-md font-semibold rounded-full p-3 hidden md:flex items-center ${lgNav? 'bg-white text-[#7dae07]':'bg-[#7dae07] text-white'}`}>(+63)32 238-4288</button>
             <div onClick={handleNav} className="block md:hidden">
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
