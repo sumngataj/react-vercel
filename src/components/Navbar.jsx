@@ -45,11 +45,11 @@ export default function Navbar() {
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-white ml-2">888 RSE Corp.</span>
                 </Link>
             <ul className="hidden md:flex items-center justify-between space-x-5 text-white">
-                <Link to="/about" className="text-md font-semibold p-4">About Us</Link>
+                <Link to="/" className="text-md font-semibold p-4">About Us</Link>
                 <Link to="/" className="text-md font-semibold p-4">Company Profile</Link>
-                <Link to="/services" className="text-md font-semibold p-4">Services</Link>
-                <Link to="/products" className="text-md font-semibold p-4">Products</Link>
-                <Link to="/contact" className="text-md font-semibold p-4">Contact Us</Link>
+                <Link to="/" className="text-md font-semibold p-4">Services</Link>
+                <Link to="/" className="text-md font-semibold p-4">Products</Link>
+                <Link to="/" className="text-md font-semibold p-4">Contact Us</Link>
             </ul>
             <button className={`text-md font-semibold rounded-full p-3 hidden md:flex items-center ${lgNav? 'bg-white text-[#7dae07]':'bg-[#7dae07] text-white'}`}>(+63)32 238-4288</button>
             <div onClick={handleNav} className="block md:hidden">
