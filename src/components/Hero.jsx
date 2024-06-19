@@ -48,7 +48,7 @@ export default function Hero() {
         </button>
       </div> */}
       <div className="flex justify-center text-center w-full absolute top-[35%] text-5xl text-white">
-          <h1>Unveiling the Future with 888 Renewable <br/> & <br/> Sustainable Energy Corporation.</h1>
+          <h1 className='leading-relaxed'>Unveiling the future with <br /> 888 Renewable and Sustainable Energy Corporation.</h1>
       </div>
 
       <div className="hidden md:flex absolute bottom-0 py-4 justify-center gap-3 w-full">
