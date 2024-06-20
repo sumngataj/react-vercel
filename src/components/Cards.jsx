@@ -58,7 +58,7 @@ export default function Cards() {
             </div>
             <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>VADM Alexander S. Lopez</span> <br /> <span className='text=sm'>Former DOE Under Secretary</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>VADM Alexander S. Lopez</span> <br /> <span className='text-sm'>Former DOE Under Secretary</span></p>
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
