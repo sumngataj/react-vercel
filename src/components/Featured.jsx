@@ -24,7 +24,7 @@ export default function Featured() {
                <MdEmail size={25} className='mt-1 mr-2'/><p className="text-2xl">rttagulao@888rsec.com</p>
             </div>
                <div className='flex items-start justify-start'>
-               <IoCall size={25} className='mt-1 mr-2' /><p className="text-2xl">(+63)32 238-4288 <br /> (+63)32 238-4288 <br /> Local 207, 208</p>
+               <IoCall size={25} className='mt-1 mr-2' /><p className="text-2xl">(+63)32 238-4288 <br /> (+63)32 238-7288 <br /> Local 207, 208</p>
             </div>
                 <div className='flex items-start justify-start'>
                <FaGlobe size={25} className='mt-1 mr-2' /><p className="text-2xl">888rsec.com</p>

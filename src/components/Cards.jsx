@@ -66,7 +66,7 @@ export default function Cards() {
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'>Board of Directors <br />Blank</p>
+                  <p className='text-center font-semibold'>Board of Directors <br />Enrico Prado</p>
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
