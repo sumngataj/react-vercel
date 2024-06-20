@@ -46,31 +46,31 @@ export default function Cards() {
          <div className='flex flex-wrap md:grid-cols-4 p-4 mt-8 border-b border-[#102437] pb-8 justify-center'>
             <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={second} width={150} height={150} className='rounded-full object-cover' />
-                <p className='text-center font-semibold'><span className='underline text-md'>Chairman of the Board</span> <br /><span className='text-lg'> Gen. Willy Bonilla</span></p>
+                <p className='text-center font-semibold'><span className='underline text-md'>Chairman of the Board</span> <br /><span className='md:text-lg'> Gen. Willy Bonilla</span></p>
             </div>
             <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={first} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='text-lg'>Mr. Edwin Robin </span> <br /><span className='text-sm'>President - Robin Group of Companies</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Mr. Edwin Robin </span> <br /><span className='text-sm'>President - Robin Group of Companies</span></p>
             </div>
             <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={third} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='text-lg'>Eng’r. Edwin Chavez - PEE</span> <br /><span className='text-sm'>President - EC Powertech.</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Edwin Chavez - PEE</span> <br /><span className='text-sm'>President - EC Powertech.</span></p>
             </div>
             <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='text-lg'>VADM Alexander S. Lopez</span> <br /> <span className='text=sm'>Former DOE Under Secretary</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>VADM Alexander S. Lopez</span> <br /> <span className='text=sm'>Former DOE Under Secretary</span></p>
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='text-lg'>Eng’r. Ernesto Abunda - PEE</span> <br /><span className='text-sm'>President - Ebatech Corp.</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Ernesto Abunda - PEE</span> <br /><span className='text-sm'>President - Ebatech Corp.</span></p>
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='text-lg'>Eng’r. Eric Prado E</span><br /><span className='text-sm'>President - KEVLAR Construction</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Eric Prado</span><br /><span className='text-sm'>President - KEVLAR Construction</span></p>
             </div>
                 <div className='relative flex flex-col items-center justify-center space-y-6 w-full md:w-1/4 p-4'>
                 <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
-                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='text-lg'>Eng’r. Robert Tagulao</span><br /><span className='text-sm'>President - RDT Sales & Services Inc.</span></p>
+                  <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Robert Tagulao</span><br /><span className='text-sm'>President - RDT Sales & Services Inc.</span></p>
             </div>
 
             </div>
