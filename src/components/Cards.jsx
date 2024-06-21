@@ -6,6 +6,7 @@ import second from '../assets/2.jpg';
 import third from '../assets/3.jpg';
 import fourth from '../assets/4.jpg';
 import fifth from '../assets/5.jpg';
+import sixth from '../assets/6.jpg';
 export default function Cards() {
   const [more, setMore] = useState(false)
       
@@ -70,7 +71,7 @@ export default function Cards() {
                   <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Eric Prado</span><br /><span className='text-sm'>President - KEVLAR Construction</span></p>
             </div>
                 <div className='relative flex flex-col items-center justify-center space-y-6 w-full md:w-1/4 p-4'>
-                <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
+                <img src={sixth} width={150} height={150} className='rounded-full object-cover' />
                   <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Robert Tagulao</span><br /><span className='text-sm'>President - RDT Sales & Services Inc.</span></p>
             </div>
 
