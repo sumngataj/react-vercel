@@ -31,15 +31,21 @@ export default function Home() {
 
     return (
         <div>
-            <Navbar />
-            <Hero />
-            <Analytics />
-            <Cards />
-            {/* <Team /> */}
-            {/* <Newsletter /> */}
-            <Featured />
-            <Footer />
-            <IoIosArrowDropupCircle className={`fixed z-10 bottom-6 right-8 text-white cursor-pointer${lgNav ? ' text-[#7dae07]' : ''}`} size={40} onClick={scrollToTop}/>
+        <Navbar />
+            <section>
+                <Hero />
+            </section>
+            <section id="about">
+                <Analytics />
+            </section>
+            <section id="company-profile">
+                <Cards />
+            </section>
+            <section id="contact">
+                <Featured />
+            </section>
+                <Footer />
+            <IoIosArrowDropupCircle className={`fixed z-10 bottom-6 right-8 text-white cursor-pointer${lgNav ? ' text-[#7dae07]' : ''}`} size={40} onClick={scrollToTop} />
         </div>
     );
 }
