@@ -5,6 +5,7 @@ import first from '../assets/1.jpg';
 import second from '../assets/2.jpg';
 import third from '../assets/3.jpg';
 import fourth from '../assets/4.jpg';
+import fifth from '../assets/5.jpg';
 export default function Cards() {
   const [more, setMore] = useState(false)
       
@@ -61,7 +62,7 @@ export default function Cards() {
                   <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>VADM Alexander S. Lopez</span> <br /> <span className='text-sm'>Former DOE Under Secretary</span></p>
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
-                <img src={fourth} width={150} height={150} className='rounded-full object-cover' />
+                <img src={fifth} width={150} height={150} className='rounded-full object-cover' />
                   <p className='text-center font-semibold'><span className='underline text-md'>Board of Directors</span><br /> <span className='md:text-lg'>Eng’r. Ernesto Abunda - PEE</span> <br /><span className='text-sm'>President - Ebatech Corp.</span></p>
             </div>
                 <div className='relative flex flex-col items-center space-y-6 w-full md:w-1/4 p-4'>
