@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import RsecLogo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function ExtendedNav() {
   const [nav, setNav] = useState(false);
   const [lgNav, setlgNav] = useState(false);
 
@@ -31,9 +31,7 @@ export default function Navbar() {
   //
   return (
     <div
-      className={`h-20 fixed z-10 w-full transition-colors duration-300 ease-in-out ${
-        lgNav ? " bg-[#7dae07] text-white shadow-md " : ""
-      }`}
+      className={`h-20 fixed z-10 w-full transition-colors duration-300 ease-in-out bg-[#7dae07]`}
     >
       {/* <h1 className="block"> 
                 <a href="" className="flex items-center 3 rtl:space-x-reverse">
@@ -49,7 +47,7 @@ export default function Navbar() {
           </span>
         </Link>
         <ul className="hidden md:flex items-center justify-between space-x-5 text-white">
-          <AnchorLink smooth={true} duration={500} href="#about">
+          <AnchorLink smooth={true} duration={500} href="/#about">
             About Us
           </AnchorLink>
           <AnchorLink smooth={true} duration={500} href="#company-profile">

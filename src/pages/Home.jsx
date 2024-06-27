@@ -41,6 +41,9 @@ export default function Home() {
             <section id="company-profile">
                 <Cards />
             </section>
+            <section id="services">
+                <Newsletter />
+            </section>
             <section id="contact">
                 <Featured />
             </section>
