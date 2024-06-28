@@ -58,9 +58,9 @@ export default function Navbar() {
           <AnchorLink smooth={true} duration={500} href="">
             Services
           </AnchorLink>
-          <AnchorLink smooth={true} duration={500} href="/products">
+          <Link className="text-md font-semibold p-4" to="/products">
             Products
-          </AnchorLink>
+          </Link>
           <AnchorLink smooth={true} duration={500} href="#contact">
             Contact Us
           </AnchorLink>
