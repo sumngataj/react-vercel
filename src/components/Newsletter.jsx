@@ -1,5 +1,6 @@
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import services from "../assets/services.jpg";
+import { Link } from "react-router-dom";
 
 export default function Newsletter() {
   return (
@@ -24,15 +25,18 @@ export default function Newsletter() {
           </div>
           <div class="px-6 py-4">
             <p class="text-gray-700 text-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volu
-              quia, nulla! Maiores et perferendis eaque, exercitationem
-              praesentium nihil.
+              Our planning services ensure that every solar energy system we
+              install is perfectly tailored to your specific needs and property
+              characteristics. We use advanced software to model.
             </p>
           </div>
-          <button className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white">
+          <Link
+            to="/services"
+            className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white"
+          >
             View Details{" "}
             <IoIosArrowDroprightCircle className="ml-2" size={20} />
-          </button>
+          </Link>
         </div>
         <div class="max-w-sm overflow-hidden shadow-lg sm:w-5/6 bg-white border border-gray-400 shadow-2xl">
           <img
@@ -48,15 +52,18 @@ export default function Newsletter() {
           </div>
           <div class="px-6 py-4">
             <p class="text-gray-700 text-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volu
-              quia, nulla! Maiores et perferendis eaque, exercitationem
-              praesentium nihil.
+              Our design process begins with a comprehensive site assessment. We
+              evaluate factors such as roof orientation, shading, and structural
+              integrity to ensure your property is suitable for solar
             </p>
           </div>
-          <button className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white">
+          <Link
+            to="/services"
+            className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white"
+          >
             View Details{" "}
             <IoIosArrowDroprightCircle className="ml-2" size={20} />
-          </button>
+          </Link>
         </div>
         <div class="max-w-sm overflow-hidden shadow-lg sm:w-5/6 bg-white  border border-gray-400 shadow-2xl">
           <img
@@ -72,15 +79,18 @@ export default function Newsletter() {
           </div>
           <div class="px-6 py-4">
             <p class="text-gray-700 text-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volu
-              quia, nulla! Maiores et perferendis eaque, exercitationem
-              praesentium nihil.
+              We specialize in installing solar panel systems of all sizes. Our
+              team conducts a thorough assessment of your property to determine
+              the optimal placement and configuration of solar panels.
             </p>
           </div>
-          <button className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white">
+          <Link
+            to="/services"
+            className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white"
+          >
             View Details{" "}
             <IoIosArrowDroprightCircle className="ml-2" size={20} />
-          </button>
+          </Link>
         </div>
         <div class="max-w-sm overflow-hidden shadow-lg sm:w-5/6 bg-white  border border-gray-400 shadow-2xl">
           <img
@@ -96,15 +106,18 @@ export default function Newsletter() {
           </div>
           <div class="px-6 py-4">
             <p class="text-gray-700 text-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Volu
-              quia, nulla! Maiores et perferendis eaque, exercitationem
-              praesentium nihil.
+              Regular maintenance is essential to ensure that your solar energy
+              system operates at peak efficiency. We provide comprehensive
+              maintenance services, including routine inspections, cleaning,
             </p>
           </div>
-          <button className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white">
+          <Link
+            to="/services"
+            className="flex items-center justify-center w-full p-2 bg-[#7dae07] text-white"
+          >
             View Details{" "}
             <IoIosArrowDroprightCircle className="ml-2" size={20} />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
