@@ -49,15 +49,21 @@ export default function Navbar() {
           </span>
         </Link>
         <ul className="hidden md:flex items-center justify-between space-x-5 text-white">
-          <AnchorLink smooth={true} duration={500} href="#about">
+          <Link
+            to="/#about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="text-md font-semibold p-4"
+          >
             About Us
-          </AnchorLink>
+          </Link>
           <AnchorLink smooth={true} duration={500} href="#company-profile">
             Company Profile
           </AnchorLink>
-          <AnchorLink smooth={true} duration={500} href="">
+          <Link className="text-md font-semibold p-4" to="/services">
             Services
-          </AnchorLink>
+          </Link>
           <Link className="text-md font-semibold p-4" to="/products">
             Products
           </Link>

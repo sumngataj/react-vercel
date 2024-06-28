@@ -1,5 +1,6 @@
 import {
   ExtendedNav,
+  Navbar,
   Hero,
   Analytics,
   Cards,
@@ -9,7 +10,7 @@ import {
   Team,
 } from "../components/index";
 
-export default function Services() {
+export default function Products() {
   // Example array of image URLs
   const imageUrls = [
     "https://ueeshop.ly200-cdn.com/u_file/UPAM/UPAM822/2007/products/02/38dad62004.jpg.500x500.jpg?x-oss-process=image/format,webp",
@@ -40,26 +41,43 @@ export default function Services() {
   ];
 
   return (
-    <div>
-      <ExtendedNav />
-      <div className="grid grid-cols-4 justify-items-center py-24 space-y-5">
+    <>
+      <Navbar />
+      <div
+        className="bg-[#7dae07] w-full h-[35rem] relative"
+        style={{
+          backgroundImage: `url(${"https://images.unsplash.com/photo-1615232714706-6b3adc67138b?q=80&w=1787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"})`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="flex justify-center items-center max-w-[1300px]"></div>
+      </div>
+      <div className="max-w-[1300px] flex items-center mx-auto font-semibold space-x-2 italic mt-8">
+        <h1 className="underline">Home</h1>
+        <h1>></h1>
+        <h1 className="underline">Products</h1>
+      </div>
+
+      <div className="grid grid-cols-4 justify-items-center">
         {imageUrls.map((url, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-3/4 space-y-2"
+            className="flex flex-col justify-center items-center max-w-xs mx-auto bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:opacity-90 transition duration-300 mt-8"
           >
             <img
               src={url}
               alt={`Image ${index}`}
-              className="mb-2 hover:opacity-85"
+              className="w-full h-64 object-contain"
             />
-            <a className="text-sm text-center" href="">
-              {imageDescriptions[index]}
-            </a>
+            <div className="p-4 text-center">
+              <a className="text-sm font-semibold" href="">
+                {imageDescriptions[index]}
+              </a>
+            </div>
           </div>
         ))}
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

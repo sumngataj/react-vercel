@@ -31,7 +31,11 @@ export default function ExtendedNav() {
   //
   return (
     <div
-      className={`h-20 fixed z-10 w-full transition-colors duration-300 ease-in-out bg-[#7dae07]`}
+      className={`h-20 fixed z-10 w-full transition-colors duration-300 ease-in-out ${
+        lgNav
+          ? " bg-[#7dae07] text-white shadow-md "
+          : "bg-white text-[#7dae07]"
+      }`}
     >
       {/* <h1 className="block"> 
                 <a href="" className="flex items-center 3 rtl:space-x-reverse">
@@ -42,11 +46,11 @@ export default function ExtendedNav() {
       <div className="flex justify-between items-center max-w-[1320px] mx-auto px-4 h-20">
         <Link to="/" className="flex items-center 3 rtl:space-x-reverse">
           <img src={RsecLogo} className="h-14" alt="888RSEC LOGO" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white ml-2">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap ml-2">
             888 RSE Corp.
           </span>
         </Link>
-        <ul className="hidden md:flex items-center justify-between space-x-5 text-white">
+        <ul className="hidden md:flex items-center justify-between space-x-5 ">
           <AnchorLink smooth={true} duration={500} href="/#about">
             About Us
           </AnchorLink>
