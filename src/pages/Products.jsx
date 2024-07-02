@@ -1,14 +1,4 @@
-import {
-  ExtendedNav,
-  Navbar,
-  Hero,
-  Analytics,
-  Cards,
-  Newsletter,
-  Featured,
-  Footer,
-  Team,
-} from "../components/index";
+import { Navbar, Footer } from "../components/index";
 
 export default function Products() {
   // Example array of image URLs
@@ -54,7 +44,7 @@ export default function Products() {
       </div>
       <div className="max-w-[1300px] flex items-center mx-auto font-semibold space-x-2 italic mt-8">
         <h1 className="underline">Home</h1>
-        <h1>></h1>
+        <h1>&gt;</h1>
         <h1 className="underline">Products</h1>
       </div>
 

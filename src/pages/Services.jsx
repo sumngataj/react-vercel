@@ -57,7 +57,7 @@ export default function Services() {
       </div>
       <h1 className="flex max-w-[1300px] mx-auto mt-8 italic font-semibold space-x-2">
         <p className=" underline">Home</p>
-        <p>></p>
+        <p>&gt;</p>
         <p className=" underline">Services</p>
       </h1>
       <div className="max-w-[1300px] mx-auto border border-gray-300 shadow-xl flex flex-col justify-center mt-8">
