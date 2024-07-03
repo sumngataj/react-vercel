@@ -88,7 +88,7 @@ export const Person = [
     subTitle: "President - EC Powertech.",
     name: " Eng’r. Edwin Chavez - PEE",
     pic: third,
-    description: `<b>Engr. Edwin Chavez</b> has 45 years of experience, he is a Professional Electrical Engineer with a master’s degree in engineering management. He is currently working as a free-lance professional consultant in the field of Electrical Engineering. Currently he has three active consultancy engagements, namely, 1- Primary Properties Corporation, a giant conglomerate in Real Estate Business based in Cebu with Condos, Subdivisions and Resorts development. 2-Mitsumi Inc-Nava Plant. 3-Aurora Pioneers Memorial College located in Aurora, Zamboanga Del Sur in their School Facilities Upgrading Project.
+    description: `<b>Edwin Chavez M. Eng, PhDE</b> has 45 years of experience, he is a Professional Electrical Engineer with a master’s degree in engineering management. He is currently working as a free-lance professional consultant in the field of Electrical Engineering. Currently he has three active consultancy engagements, namely, 1- Primary Properties Corporation, a giant conglomerate in Real Estate Business based in Cebu with Condos, Subdivisions and Resorts development. 2-Mitsumi Inc-Nava Plant. 3-Aurora Pioneers Memorial College located in Aurora, Zamboanga Del Sur in their School Facilities Upgrading Project.
     
     He is a Diamond Jubilee Alumni Awardee of Cebu Institute of Technology – University – Year 2021 also an Awardee of IIEE-Cebu. Currently active in Social Work under the umbrella of Couples for Christ International Foundation serving in ANCOP (Answering the Cry of the Poor) PROGRAM.
     
