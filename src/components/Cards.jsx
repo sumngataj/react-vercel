@@ -108,7 +108,13 @@ export default function Cards() {
             >
               <div className="relative max-w-3xl w-full mx-auto rounded-lg overflow-hidden bg-white h-[40rem] overflow-y-auto">
                 <div className="p-2 sm:p-4 md:p-8">
-                  <p className="leading-relaxed">{description.description}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: description.description,
+                    }}
+                    className="leading-relaxed"
+                    style={{ whiteSpace: "pre-line" }}
+                  />
                 </div>
               </div>
             </div>
