@@ -27,6 +27,7 @@ export default function Products() {
     "Mono 156.75mm 5BB Full-cell Solar Panels - 72 Cells",
     "Poly 156.75mm 5BB Full-cell Solar Panels - 60 Cells",
     "Poly 156.75mm 5BB Full-cell Solar Panels - 72 Cells",
+
     // Add more descriptions as needed
   ];
 
