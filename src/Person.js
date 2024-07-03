@@ -88,7 +88,18 @@ export const Person = [
     subTitle: "President - EC Powertech.",
     name: " Eng’r. Edwin Chavez - PEE",
     pic: third,
-    description: "",
+    description: `<b>Engr. Edwin Chavez</b> has 45 years of experience, he is a Professional Electrical Engineer with a master’s degree in engineering management. He is currently working as a free-lance professional consultant in the field of Electrical Engineering. Currently he has three active consultancy engagements, namely, 1- Primary Properties Corporation, a giant conglomerate in Real Estate Business based in Cebu with Condos, Subdivisions and Resorts development. 2-Mitsumi Inc-Nava Plant. 3-Aurora Pioneers Memorial College located in Aurora, Zamboanga Del Sur in their School Facilities Upgrading Project.
+    
+    He is a Diamond Jubilee Alumni Awardee of Cebu Institute of Technology – University – Year 2021 also an Awardee of IIEE-Cebu. Currently active in Social Work under the umbrella of Couples for Christ International Foundation serving in ANCOP (Answering the Cry of the Poor) PROGRAM.
+    
+    Has worked as Technical Service Manager of CECECO -I, II, & II from 1990-95 and headed the rehabilitation of Cebu North post typhoon Ruping in Nov. 1990. Also headed the team in the power rehabilitation of Ormoc City post flash flood tragedy in 1991.
+    
+    He has worked in various companies in the Middle East in the field of utility and hospital operations, namely, Saudi Consolidated Electric Company – SCECO Riyadh Districts and King Faisal Specialist Hospital and Research Centre in Riyadh.
+    
+    Formerly worked as the President & Managing Director of EC Pwrtech & Services Inc., COO-Tekton Entre Multi-Purpose Cooperative’s Renewable Energy & Services, and He is an associate member of the world’s largest technical organization, the Institute of Electrical and Electronics Engineers (IEEE), and a senior member and former Cebu Chapter president of the Institute of Integrated Electrical Engineers (IIEE) of the Philippines and Society of Philippine Electrical Contractors and Suppliers (SPECS) Association. Engr. Chavez was awarded as “Most Outstanding Electrical Engineer in the field of Electrical Contracting/Project Management" by IIEE in 2004.
+ 
+    A drone pilot, loves photography, playing, lawn tennis and other outdoor sports. A typical dynamic personality.
+`,
   },
   {
     id: 4,
@@ -96,10 +107,11 @@ export const Person = [
     subTitle: "Former DOE Under Secretary",
     name: "VADM Alexander S. Lopez",
     pic: Alexander,
-    description:
-      "Alexander Soria Lopez is a former Undersecretary of the Department of Energy (DOE) where he took cognizance of the human and natural security and safety threats affecting the energy sector that helped ensure the continued and unabated supply and delivery of energy-related services of the country. While at DOE, he also served as supervising Undersecretary of the DOE Field Offices in Luzon, Visayas, and Mindanao, the DOE Consumer Welfare and Protection Office (CWPO), the DOE Internal Audit Division (IAD), as well as the DOE’s principal representative to different security-related national boards, committees, councils, and other DOE-peculiar task forces. \
-    Prior to his appointment to DOE, he distinguished himself with dedicated and loyal service to the country and Filipino people. He served the Armed Forces of the Philippines (AFP) for more than 38 years and retired with the rank Vice Admiral (3-star) in the Philippine Navy (PN). He specialized and had vast experiences in the field of military operations, intelligence, education and training, humanitarian assistance and disaster relief (HADR) operations, operational logistics, diplomacy, and management. He graduated from the Philippine Military Academy (PMA) in 1982. He had been designated and assumed different administrative and operational positions of major responsibilities in the AFP, most significant of which, among others: Commander, Western Command, (WESCOM) AFP; Deputy Chief of Staff for Education and Training (J8), AFP; Commander, Fleet-Marine Ready Force (FMRF), PN; Philippine Defense and Armed Forces Attaché (PhilDAFA) to the Republic of Singapore; and commanded five (5) commissioned Philippine Navy (PN) vessels. \
-    He has an MA degree in Business Economics from the University of Asia and the Pacific (UA&P); and was also a recipient of several military trainings and specialty courses from both local and foreign military schools and institutions.",
+    description: `<b>Alexander Soria Lopez</b> is a former Undersecretary of the Department of Energy (DOE) where he took cognizance of the human and natural security and safety threats affecting the energy sector that helped ensure the continued and unabated supply and delivery of energy-related services of the country. While at DOE, he also served as supervising Undersecretary of the DOE Field Offices in Luzon, Visayas, and Mindanao, the DOE Consumer Welfare and Protection Office (CWPO), the DOE Internal Audit Division (IAD), as well as the DOE’s principal representative to different security-related national boards, committees, councils, and other DOE-peculiar task forces. 
+
+    Prior to his appointment to DOE, he distinguished himself with dedicated and loyal service to the country and Filipino people. He served the Armed Forces of the Philippines (AFP) for more than 38 years and retired with the rank Vice Admiral (3-star) in the Philippine Navy (PN). He specialized and had vast experiences in the field of military operations, intelligence, education and training, humanitarian assistance and disaster relief (HADR) operations, operational logistics, diplomacy, and management. He graduated from the Philippine Military Academy (PMA) in 1982. He had been designated and assumed different administrative and operational positions of major responsibilities in the AFP, most significant of which, among others: Commander, Western Command, (WESCOM) AFP; Deputy Chief of Staff for Education and Training (J8), AFP; Commander, Fleet-Marine Ready Force (FMRF), PN; Philippine Defense and Armed Forces Attaché (PhilDAFA) to the Republic of Singapore; and commanded five (5) commissioned Philippine Navy (PN) vessels. 
+    
+    He has an MA degree in Business Economics from the University of Asia and the Pacific (UA&P); and was also a recipient of several military trainings and specialty courses from both local and foreign military schools and institutions.`,
   },
   {
     id: 5,
