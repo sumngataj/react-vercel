@@ -43,13 +43,13 @@ export default function Products() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="flex justify-center items-center max-w-[1300px]"></div>
       </div>
-      <div className="max-w-[1300px] flex items-center mx-auto font-semibold space-x-2 italic mt-8">
+      <div className="flex items-center mx-8 font-semibold space-x-2 italic mt-8">
         <h1 className="underline">Home</h1>
         <h1>&gt;</h1>
         <h1 className="underline">Products</h1>
       </div>
 
-      <div className="grid grid-cols-4 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
         {imageUrls.map((url, index) => (
           <div
             key={index}

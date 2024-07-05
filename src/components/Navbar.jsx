@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import RsecLogo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+import { SiAmazonsimpleemailservice } from "react-icons/si";
+import { BsShop } from "react-icons/bs";
+import { FaRegBuilding } from "react-icons/fa";
+import { FaSquarePhone } from "react-icons/fa6";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -94,19 +99,49 @@ export default function Navbar() {
               888 RSE Corp.
             </span>
           </Link>
-          <ul className="uppercase">
-            <li className="p-4 border-b border-gray-200 cursor-pointer">
+          <ul className="flex flex-col uppercase text-black mt-4">
+            <Link
+              to="/#about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="flex items-center font-semibold text-md p-4 border-b border-t hover:bg-[#7dae07] hover:text-white hover:border-[#7dae07]"
+            >
+              <FaHome className="mr-2" />
               About Us
-            </li>
-            <li className="p-4 border-b border-gray-200 cursor-pointer">
+            </Link>
+            <Link
+              to="/#company-profile"
+              smooth={true}
+              duration={500}
+              className="flex items-center font-semibold text-md p-4 border-b hover:bg-[#7dae07] hover:text-white hover:border-[#7dae07]"
+            >
+              <FaRegBuilding className="mr-2" />
+              Company Profile
+            </Link>
+            <Link
+              className="flex items-center font-semibold text-md p-4 border-b hover:bg-[#7dae07] hover:text-white hover:border-[#7dae07]"
+              to="/services"
+            >
+              <SiAmazonsimpleemailservice className="mr-2" />
               Services
-            </li>
-            <li className="p-4 border-b border-gray-200 cursor-pointer">
+            </Link>
+            <Link
+              className="flex items-center font-semibold text-md p-4 border-b hover:bg-[#7dae07] hover:text-white hover:border-[#7dae07]"
+              to="/products"
+            >
+              <BsShop className="mr-2" />
               Products
-            </li>
-            <li className="p-4 border-b border-gray-200 cursor-pointer">
+            </Link>
+            <Link
+              to="/#contact"
+              smooth={true}
+              duration={500}
+              className="flex items-center font-semibold text-md p-4 border-b hover:bg-[#7dae07] hover:text-white hover:border-[#7dae07]"
+            >
+              <FaSquarePhone className="mr-2" />
               Contact Us
-            </li>
+            </Link>
           </ul>
         </div>
       </div>
