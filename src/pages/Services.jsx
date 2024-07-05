@@ -33,7 +33,7 @@ export default function Services() {
           />
         </div>
         <div className="max-w-xl  mt-12 text-lg leading-relaxed p-8 md:p-0">
-          k<h1 className="text-3xl font-semibold mb-4 underline">Design</h1>
+          <h1 className="text-3xl font-semibold mb-4 underline">Design</h1>
           Our design process begins with a comprehensive site assessment. We
           evaluate factors such as roof orientation, shading, and structural
           integrity to ensure your property is suitable for solar installation.
