@@ -1,8 +1,6 @@
 import { Person } from "../Person";
 import RsecLogo from "../assets/logo1.png";
 import { useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function Cards() {
   const [description, setDescription] = useState(null);
