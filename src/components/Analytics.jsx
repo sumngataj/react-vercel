@@ -14,8 +14,8 @@ export default function Analytics() {
     setShowModal(false);
   };
   return (
-    <div className="relative flex overflow-hidden h-sreen shadow-2xl mx-auto py-8 ">
-      <div className="w-full relative flex justify-center items-center ">
+    <div className="relative grid grid-cols-1 lg:grid-cols-2 overflow-hidden h-auto lg:h-screen shadow-2xl mx-auto ">
+      <div className="relative hidden md:w-full lg:flex justify-center items-center ">
         <button
           type="button"
           onClick={openModal}
@@ -27,12 +27,14 @@ export default function Analytics() {
           />
           <img
             src="https://plus.unsplash.com/premium_photo-1680085770875-881edf31094e?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            className="object-cover h-[40rem] w-full "
+            className="object-cover object-top h-[55rem] w-full "
           />
         </button>
       </div>
-      <div className="w-full p-12">
-        <h1 className="text-md md:text-5xl font-semibold">About Us</h1>
+      <div className="w-full p-12 justify-items-center">
+        <h1 className="text-xl sm:text-3xl md:text-5xl font-semibold">
+          About Us
+        </h1>
         <br />
         <p className="text-md md:text-xl text-justify leading-relaxed">
           As we stand at the cusp of a new era in energy production and
@@ -40,6 +42,23 @@ export default function Analytics() {
           introduce to you the pioneering vision and groundbreaking achievements
           of 888 Renewable and Sustainable Energy Corporation.{" "}
         </p>
+        <br />
+        <div className="relative flex w-full lg:hidden justify-center items-center ">
+          <button
+            type="button"
+            onClick={openModal}
+            className="w-full hover:opacity-90 transition ease-in-out"
+          >
+            <FaCirclePlay
+              size={100}
+              className="absolute inset-0 text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1680085770875-881edf31094e?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="object-cover object-center h-[20rem] w-full"
+            />
+          </button>
+        </div>
         <br />
         <p className="text-md md:text-xl text-justify leading-relaxed">
           Our journey began with a simple yet profound belief: that the path to

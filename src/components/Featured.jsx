@@ -14,98 +14,116 @@ export default function Featured() {
         referrerpolicy="no-referrer-when-downgrade"
         title="Google Map"
       ></iframe>
-      <div className="max-w-[1340px] mx-auto flex flex-col items-start justify-between mt-8">
+      <div className="max-w-[1340px] mx-auto flex flex-col items-start justify-between mt-8 p-8 md:p-0">
         <div className="grid md:grid-cols-2">
-          <h1 className="text-4xl leading-relaxed font-medium underline">
-            Information
-          </h1>
-          <h1 className="text-xl leading-relaxed font-medium underline">
-            Contact Us
-          </h1>
-          <div className="flex flex-col mt-6 space-y-10">
-            <div className="flex items-start justify-start">
-              <FaLocationDot size={25} className="mt-1 mr-2" />
-              <p className="text-2xl">
-                8th floor, Robinland Building, Zuellig Ave. <br />
-                Subangdaku, Mandaue City, Cebu, PH 6014
-              </p>
-            </div>
-            <div className="flex items-start justify-start">
-              <MdEmail size={25} className="mt-1 mr-2" />
-              <p className="text-2xl">rttagulao@888rsec.com</p>
-            </div>
-            <div className="flex items-start justify-start">
-              <IoCall size={25} className="mt-1 mr-2" />
-              <p className="text-2xl">
-                (+63)32 238-4288 <br /> (+63)32 238-7288 <br /> Local 207, 208
-              </p>
-            </div>
-            <div className="flex items-start justify-start">
-              <FaGlobe size={25} className="mt-1 mr-2" />
-              <p className="text-2xl">888rsec.com</p>
+          <div>
+            <h1 className="text-2xl sm:text-3xl md:text-5xl leading-relaxed font-medium underline">
+              Information
+            </h1>
+            <div className="flex flex-col mt-6 space-y-4 md:space-y-10">
+              <div className="flex items-start justify-start">
+                <FaLocationDot
+                  size={25}
+                  className="mt-1 mr-2 hidden md:block"
+                />
+                <FaLocationDot
+                  size={18}
+                  className="mt-1 mr-2 block md:hidden"
+                />
+                {/* <FaLocationDot size={25} className="mt-1 mr-2" /> */}
+                <p className="text-md sm:text-xl md:text-2xl">
+                  8th floor, Robinland Building, Zuellig Ave. <br />
+                  Subangdaku, Mandaue City, Cebu, PH 6014
+                </p>
+              </div>
+              <div className="flex items-start justify-start">
+                <MdEmail size={25} className="mt-1 mr-2 hidden md:block" />
+                <MdEmail size={18} className="mt-1 mr-2 block md:hidden" />
+                <p className="text-md sm:text-xl md:text-2xl">
+                  rttagulao@888rsec.com
+                </p>
+              </div>
+              <div className="flex items-start justify-start">
+                <IoCall size={25} className="mt-1 mr-2 hidden md:block" />
+                <IoCall size={18} className="mt-1 mr-2 block md:hidden" />
+                <p className="text-md sm:text-xl md:text-2xl">
+                  (+63)32 238-4288 <br /> (+63)32 238-7288 <br /> Local 207, 208
+                </p>
+              </div>
+              <div className="flex items-start justify-start">
+                <FaGlobe size={25} className="mt-1 mr-2 hidden md:block" />
+                <FaGlobe size={18} className="mt-1 mr-2 block md:hidden" />
+                <p className="text-md sm:text-xl md:text-2xl">888rsec.com</p>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col">
-            <div>
-              <p className="leading-relaxed text-md">
-                We invite you to join us on this journey. Together, we can make
-                a difference. Together, we can build a future that is not only
-                sustainable but also prosperous and full of promise. Let us
-                embrace the power of renewable energy and work hand in hand
-                towards a brighter, greener tomorrow.
-              </p>
-              <br />
-            </div>
-            <p className="underline font-medium">
-              Get in touch with us through message
-            </p>
-            <div className="flex flex-col mt-4">
-              <label for="email" className="hidden">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                className="p-2 rounded-lg border border-gray-400 focus:border-black focus:outline-none"
-              />
-            </div>
-            <div className="flex flex-col mt-2">
-              <label for="subject" className="hidden">
-                Subject
-              </label>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-                className="p-2 rounded-lg border border-gray-400 focus:border-black focus:outline-none"
-              />
-            </div>
+          <div>
+            <h1 className="text-lg md:text-xl leading-relaxed font-medium underline mt-8 md:mt-0">
+              Contact Us
+            </h1>
+
             <div className="flex flex-col">
-              <label
-                for="message"
-                className="text-sm font-medium text-gray-900 dark:text-white"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="6"
-                className="p-2 rounded-lg border border-gray-400 focus:border-black focus:outline-none"
-                placeholder="Message"
-              ></textarea>
+              <div>
+                <p className="leading-relaxed text-md">
+                  We invite you to join us on this journey. Together, we can
+                  make a difference. Together, we can build a future that is not
+                  only sustainable but also prosperous and full of promise. Let
+                  us embrace the power of renewable energy and work hand in hand
+                  towards a brighter, greener tomorrow.
+                </p>
+                <br />
+              </div>
+              <p className="underline font-medium">
+                Get in touch with us through message
+              </p>
+              <div className="flex flex-col mt-4">
+                <label for="email" className="hidden">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  className="p-2 rounded-lg border border-gray-400 focus:border-black focus:outline-none"
+                />
+              </div>
+              <div className="flex flex-col mt-2">
+                <label for="subject" className="hidden">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  className="p-2 rounded-lg border border-gray-400 focus:border-black focus:outline-none"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label
+                  for="message"
+                  className="text-sm font-medium text-gray-900 dark:text-white"
+                >
+                  Your message
+                </label>
+                <textarea
+                  id="message"
+                  rows="6"
+                  className="p-2 rounded-lg border border-gray-400 focus:border-black focus:outline-none"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button className="w-full rounded-md bg-[#7dae07] text-white text-md p-2 mt-6">
+                Send Message
+              </button>{" "}
+              <br />
+              <p className="leading-relaxed text-sm sm:text-md font-semibold italic">
+                Thank you for your unwavering support and belief in our mission.
+                Here’s to a future powered by renewable energy, innovation, and
+                collective action.
+              </p>
             </div>
-            <button className="w-full rounded-md bg-[#7dae07] text-white text-md p-2 mt-6">
-              Send Message
-            </button>{" "}
-            <br />
-            <p className="leading-relaxed text-md font-semibold italic">
-              Thank you for your unwavering support and belief in our mission.
-              Here’s to a future powered by renewable energy, innovation, and
-              collective action.
-            </p>
           </div>
         </div>
       </div>

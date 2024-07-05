@@ -1,14 +1,14 @@
-import HeroIcon from "../assets/bghero.jpg"
-import { useState, useEffect } from 'react';
-import Typewriter from 'typewriter-effect';
+import HeroIcon from "../assets/bghero.jpg";
+import { useState, useEffect } from "react";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   let slides = [
     "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://plus.unsplash.com/premium_photo-1677934856407-b937f6ba41dd?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://power-save.com/wp-content/uploads/2020/11/Hydropower-as-Renewable-Energy-Source-2048x1365.jpg",
-    "https://images.unsplash.com/photo-1630142896875-d71a6ee6db03?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  ]
+    "https://images.unsplash.com/photo-1630142896875-d71a6ee6db03?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ];
   let [current, setCurrent] = useState(0);
 
   let previousSlide = () => {
@@ -34,7 +34,12 @@ export default function Hero() {
         }}
       >
         {slides.map((s) => {
-          return <img className=' w-full h-full object-cover object-bottom' src={s} />;
+          return (
+            <img
+              className=" w-full h-full object-cover object-bottom"
+              src={s}
+            />
+          );
         })}
       </div>
       <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -47,8 +52,11 @@ export default function Hero() {
           <BsFillArrowRightCircleFill />
         </button>
       </div> */}
-      <div className="flex justify-center text-center w-full absolute top-[35%] text-5xl text-white">
-          <h1 className='leading-relaxed'>Unveiling the future with <br /> 888 Renewable and Sustainable Energy Corporation.</h1>
+      <div className="flex justify-center text-center w-full absolute top-[35%] text-2xl sm:text-4xl md:text-5xl text-white">
+        <h1 className="leading-relaxed">
+          Unveiling the future with <br /> 888 Renewable and Sustainable Energy
+          Corporation.
+        </h1>
       </div>
 
       <div className="hidden md:flex absolute bottom-0 py-4 justify-center gap-3 w-full">

@@ -48,7 +48,7 @@ export default function Navbar() {
             888 RSE Corp.
           </span>
         </Link>
-        <ul className="hidden md:flex items-center justify-between space-x-5 text-white">
+        <ul className="hidden lg:flex items-center justify-between space-x-5 text-white">
           <Link
             to="/#about"
             spy={true}
@@ -72,24 +72,29 @@ export default function Navbar() {
           </AnchorLink>
         </ul>
         <button
-          className={`text-md font-semibold rounded-full p-3 hidden md:flex items-center ${
+          className={`text-md font-semibold rounded-full p-3 hidden lg:flex items-center ${
             lgNav ? "bg-white text-[#7dae07]" : "bg-[#7dae07] text-white"
           }`}
         >
           (+63)32 238-4288
         </button>
-        <div onClick={handleNav} className="block md:hidden">
+        <div onClick={handleNav} className="block lg:hidden">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[60%] h-full shadow-md bg-[#7dae07] text-white ease-in-out duration-500"
+              ? "fixed left-0 top-0 w-[60%] h-full shadow-md bg-white text-black ease-in-out duration-500"
               : "fixed left-[-100%]"
           }
         >
-          <h1 className="w-full text-3xl font-bold m-4">888 RSE Corp.</h1>
-          <ul className="uppercase p-4">
+          <Link to="/" className="flex items-center rtl:space-x-reverse mx-4">
+            <img src={RsecLogo} className="h-14" alt="888RSEC LOGO" />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-black ml-2 mt-1">
+              888 RSE Corp.
+            </span>
+          </Link>
+          <ul className="uppercase">
             <li className="p-4 border-b border-gray-200 cursor-pointer">
               About Us
             </li>
